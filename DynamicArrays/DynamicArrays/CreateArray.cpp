@@ -11,6 +11,14 @@ void CreateArray(int32_t*& array, int32_t& size)
 {
 	array = new int32_t[size];
 }
+void InPutArray(int32_t* array, int32_t size)
+{
+	std::cout << "Input elements of array\n";
+	for (size_t i{}; i < size; ++i)
+	{
+		std::cin >> array[i];
+	}
+}
 void OutPutArray(int32_t* array, int32_t size)
 {
 	for (size_t i{}; i < size; ++i) 
