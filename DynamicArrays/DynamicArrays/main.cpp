@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Base.h"
+#include "FirstTasks.h"
 int main()
 {
 	int32_t* array{ nullptr };
@@ -10,6 +11,7 @@ int main()
 		CreateArray(array, size);
 		FillArray(array, size);
 
+		std::cout << MinElementIndex(array, size) <<'\n';
 		DeleteArray(array);
 	}
 	catch (std::invalid_argument& message)

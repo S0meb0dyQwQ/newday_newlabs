@@ -23,5 +23,5 @@ void FillArray(int32_t* array, int32_t size)
 		array[i] = rand() % 100 - 50;
 		std::cout << array[i] << '\t';
 	}
-
+	std::cout << '\n';
 }
