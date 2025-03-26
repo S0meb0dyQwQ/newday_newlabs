@@ -1,5 +1,4 @@
 #include "FirstTasks.h"
-#include <iostream>
 int32_t MinElementIndex(int32_t* array, int32_t size)
 {
 	int32_t min_index{array[0]};
