@@ -1,11 +1,11 @@
 #include "FirstTasks.h"
 #include "Base.h"
-void InputNumber(int32_t& number)
+void InputNumber(double& number)
 {
 	std::cout << "input number\n";
 	std::cin >> number;
 }
-void ChangeArray(int32_t* array, int32_t size, int32_t number) 
+void ChangeArray(double* array, int32_t size, double number)
 {
 	for (size_t i{}; i < size; ++i) 
 	{
