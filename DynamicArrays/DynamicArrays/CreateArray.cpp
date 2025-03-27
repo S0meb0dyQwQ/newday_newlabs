@@ -1,6 +1,7 @@
 #include "Base.h"
 void InputSize(int32_t& size)
 {
+	std::cout << "input size\n";
 	std::cin >> size;
 	if (size <= 0) 
 	{
@@ -33,6 +34,7 @@ void DeleteArray(double*& array)
 }
 void FillArray(double* array, int32_t size)
 {
+	std::cout << "here is your array\n";
 	srand(time(NULL));
 	for (size_t i{}; i < size; ++i)
 	{
@@ -40,4 +42,9 @@ void FillArray(double* array, int32_t size)
 		std::cout << array[i] << '\t';
 	}
 	std::cout << '\n';
+}
+void ChooseType(char& choose)
+{
+	std::cout << "Do u want to input array by yorself ? ( y/n )\n";
+	std::cin >> choose;
 }

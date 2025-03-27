@@ -7,6 +7,7 @@ void InputNumber(double& number)
 }
 void ChangeArray(double* array, int32_t size, double number)
 {
+	std::cout << "sorted by your number\n";
 	for (size_t i{}; i < size; ++i) 
 	{
 		for (int32_t j{}; j < size - i - 1; ++j)
