@@ -8,6 +8,8 @@ int main()
 	int32_t size{};
 	double number{ 0.0 };
 	char choose{};
+	double first_end{ 0.0 };
+	double second_end{ 0.0 };
 	try
 	{
 		InputSize(size);
@@ -19,7 +21,8 @@ int main()
 			InPutArray(array, size);
 			break;
 		case'n':
-			FillArray(array, size);
+			InputInterval(first_end, second_end);
+			FillArray(array, size, first_end, second_end);
 			break;
 		default:
 			throw std::invalid_argument("wrong answer");

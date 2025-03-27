@@ -6,9 +6,10 @@
 void InputSize(int32_t&);
 void CreateArray(double*&, int32_t&);
 void DeleteArray(double*&);
-void FillArray(double*, int32_t);
+void FillArray(double*, int32_t, double, double);
 void OutPutArray(double*, int32_t);
 void InPutArray(double*, int32_t);
-double InputInterval(double);
+void InputInterval(double&, double&);
+void CheckInterval(double&, double&);
 void ChooseType(char&);
 #endif

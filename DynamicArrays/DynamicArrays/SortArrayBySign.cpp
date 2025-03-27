@@ -5,7 +5,7 @@ void SortBySign(double* array, int32_t size)
 	std::cout << " your array sorted by sign\n";
 	for (size_t i{}; i < size; ++i)
 	{
-		for (int32_t j{}; j < size - i - 1; ++j)
+		for (size_t j{}; j < size - i - 1; ++j)
 		{
 			if (array[j] >= 0 && array[j + 1] < 0)
 			{
