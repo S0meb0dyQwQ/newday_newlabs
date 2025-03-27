@@ -1,8 +1,8 @@
 #include "FirstTasks.h"
-int32_t MinElementIndex(int32_t* array, int32_t size)
+int32_t MinElementIndex(double* array, int32_t size)
 {
 	int32_t min_index{};
-	int32_t min{ array[0] };
+	double min{ array[0] };
 	for (size_t i{}; i < size; ++i)
 	{
 		if (array[i] <= min)

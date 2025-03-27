@@ -4,9 +4,9 @@
 #include "SecondTasks.H"
 int main()
 {
-	int32_t* array{ nullptr };
+	double* array{ nullptr };
 	int32_t size{};
-	int32_t number;
+	double number;
 	try
 	{
 		InputSize(size);

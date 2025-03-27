@@ -4,9 +4,10 @@
 #include<cstdlib>
 #include<ctime>
 void InputSize(int32_t&);
-void CreateArray(int32_t*&, int32_t&);
-void DeleteArray(int32_t*&);
-void FillArray(int32_t*, int32_t);
-void OutPutArray(int32_t*, int32_t);
-void InPutArray(int32_t*, int32_t);
+void CreateArray(double*&, int32_t&);
+void DeleteArray(double*&);
+void FillArray(double*, int32_t);
+void OutPutArray(double*, int32_t);
+void InPutArray(double*, int32_t);
+double InputInterval(double);
 #endif

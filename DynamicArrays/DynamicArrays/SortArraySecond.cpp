@@ -1,6 +1,6 @@
 #include "SecondTasks.H"
 #include "Base.h"
-void SortArray(int32_t* a, int32_t size) 
+void SortArray(double* a, int32_t size)
 {
 	for (int32_t i{}; i < size - 1; ++i)
 	{

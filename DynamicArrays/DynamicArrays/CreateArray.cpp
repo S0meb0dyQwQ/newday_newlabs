@@ -7,11 +7,11 @@ void InputSize(int32_t& size)
 		throw std::invalid_argument("wrong size");
 	}
 }
-void CreateArray(int32_t*& array, int32_t& size)
+void CreateArray(double*& array, int32_t& size)
 {
-	array = new int32_t[size];
+	array = new double[size];
 }
-void InPutArray(int32_t* array, int32_t size)
+void InPutArray(double* array, int32_t size)
 {
 	std::cout << "Input elements of array\n";
 	for (size_t i{}; i < size; ++i)
@@ -19,7 +19,7 @@ void InPutArray(int32_t* array, int32_t size)
 		std::cin >> array[i];
 	}
 }
-void OutPutArray(int32_t* array, int32_t size)
+void OutPutArray(double* array, int32_t size)
 {
 	for (size_t i{}; i < size; ++i) 
 	{
@@ -27,16 +27,16 @@ void OutPutArray(int32_t* array, int32_t size)
 	}
 	std::cout << '\n';
 }
-void DeleteArray(int32_t*& array)
+void DeleteArray(double*& array)
 {
 	delete[]array;
 }
-void FillArray(int32_t* array, int32_t size)
+void FillArray(double* array, int32_t size)
 {
 	srand(time(NULL));
 	for (size_t i{}; i < size; ++i)
 	{
-		array[i] = rand()%100 - 50;
+		array[i] = static_cast<double>(rand()) / RAND_MAX * (100) - 50;
 		std::cout << array[i] << '\t';
 	}
 	std::cout << '\n';
