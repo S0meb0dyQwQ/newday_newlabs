@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CreateArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\CreateArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CountDifferent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\CountDifferent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CountMulti.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\CountMulti.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\MinElementIndex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -25,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\SortArraySecond.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\SortArraySecond.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CreateArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\CreateArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|solutionrelative:DynamicArrays\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CD5C0A2-29B8-43B0-8B8F-7117530D9B0F}|DynamicArrays\\DynamicArrays.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\ChangeArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -54,25 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\main.cpp",
               "RelativeDocumentMoniker": "DynamicArrays\\main.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\main.cpp",
               "RelativeToolTip": "DynamicArrays\\main.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwB4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-25T14:56:29.216Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CountMulti.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CountMulti.cpp",
               "RelativeDocumentMoniker": "DynamicArrays\\CountMulti.cpp",
@@ -80,12 +79,11 @@
               "RelativeToolTip": "DynamicArrays\\CountMulti.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T18:18:47.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:18:47.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "SortArraySecond.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\SortArraySecond.cpp",
               "RelativeDocumentMoniker": "DynamicArrays\\SortArraySecond.cpp",
@@ -93,12 +91,11 @@
               "RelativeToolTip": "DynamicArrays\\SortArraySecond.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T17:48:26.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:48:26.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SecondTasks.H",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\SecondTasks.H",
               "RelativeDocumentMoniker": "DynamicArrays\\SecondTasks.H",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "DynamicArrays\\SecondTasks.H",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T17:45:49.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:45:49.492Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "DynamicArrays\\ChangeArray.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T17:02:56.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:02:56.899Z"
             },
             {
               "$type": "Document",
@@ -136,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MinElementIndex.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\MinElementIndex.cpp",
               "RelativeDocumentMoniker": "DynamicArrays\\MinElementIndex.cpp",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "DynamicArrays\\MinElementIndex.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T16:09:57.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T16:09:57.582Z"
             },
             {
               "$type": "Document",
@@ -157,47 +151,44 @@
               "RelativeToolTip": "DynamicArrays\\FirstTasks.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T16:07:00.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T16:07:00.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "CreateArray.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CreateArray.cpp",
               "RelativeDocumentMoniker": "DynamicArrays\\CreateArray.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CreateArray.cpp",
               "RelativeToolTip": "DynamicArrays\\CreateArray.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA8AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-25T16:11:05.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T16:11:05.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Base.h",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\Base.h",
               "RelativeDocumentMoniker": "DynamicArrays\\Base.h",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\Base.h",
               "RelativeToolTip": "DynamicArrays\\Base.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-25T16:03:44.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CountDifferent.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CountDifferent.cpp",
               "RelativeDocumentMoniker": "DynamicArrays\\CountDifferent.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\DynamicArrays\\DynamicArrays\\CountDifferent.cpp",
               "RelativeToolTip": "DynamicArrays\\CountDifferent.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T17:56:45.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:56:45.778Z"
             }
           ]
         }

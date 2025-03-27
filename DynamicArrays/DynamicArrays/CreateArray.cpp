@@ -36,7 +36,7 @@ void FillArray(int32_t* array, int32_t size)
 	srand(time(NULL));
 	for (size_t i{}; i < size; ++i)
 	{
-		array[i] = rand() % 100 - 50;
+		array[i] = rand()%100 - 50;
 		std::cout << array[i] << '\t';
 	}
 	std::cout << '\n';

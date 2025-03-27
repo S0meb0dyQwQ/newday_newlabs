@@ -18,11 +18,10 @@ int main()
 		std::cout << SummBetweenNegative(array, size) << '\n';
 		InputNumber(number);
 		ChangeArray(array, size, number);
-		std::cout << FindAbsMax(array, size) << '\n';
 
 		SortArray(array, size);
 		InPutArray(array, size);
-		std::cout << CountDifferentNumbers(array, size) << '\n';
+		std::cout <<"ammount of different elements: " << CountDifferentNumbers(array, size) << '\n';
 
 		DeleteArray(array);
 	}
