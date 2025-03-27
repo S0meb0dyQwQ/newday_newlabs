@@ -32,13 +32,13 @@ void DeleteArray(double*& array)
 {
 	delete[]array;
 }
-void FillArray(double* array, int32_t size)
+void FillArray(double* array, int32_t size, double a, double b)
 {
 	std::cout << "here is your array\n";
 	srand(time(NULL));
 	for (size_t i{}; i < size; ++i)
 	{
-		array[i] = static_cast<double>(rand()) / RAND_MAX * (100) - 50;
+		array[i] = static_cast<double>(rand()) / RAND_MAX * (b - a) + a;
 		std::cout << array[i] << '\t';
 	}
 	std::cout << '\n';
@@ -47,4 +47,23 @@ void ChooseType(char& choose)
 {
 	std::cout << "Do u want to input array by yorself ? ( y/n )\n";
 	std::cin >> choose;
+}
+void InputInterval(double& a, double& b)
+{
+	std::cout << "input first border: ";
+	std::cin >> a;
+	std::cout << "input second border: ";
+	std::cin >> b;
+	CheckInterval(a, b);
+}
+void CheckInterval(double& a, double& b) 
+{
+	if (a == b)
+	{
+		throw std::invalid_argument("wrong interval");
+	}
+	if (a > b) 
+	{
+		std::swap(a, b);
+	}
 }
