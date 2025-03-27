@@ -10,4 +10,5 @@ void FillArray(double*, int32_t);
 void OutPutArray(double*, int32_t);
 void InPutArray(double*, int32_t);
 double InputInterval(double);
+void ChooseType(char&);
 #endif

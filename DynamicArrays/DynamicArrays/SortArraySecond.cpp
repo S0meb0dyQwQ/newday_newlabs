@@ -12,5 +12,4 @@ void SortArray(double* a, int32_t size)
 			}
 		}
 	}
-	OutPutArray(a, size);
 }

@@ -1,6 +1,7 @@
 #include "SecondTasks.H"
 int32_t CountDifferentNumbers(double* a, int32_t size)
 {
+	SortArray(a, size);
 	int32_t ammount{1};
 	for (int32_t i{}; i < size - 1; ++i)
 	{
