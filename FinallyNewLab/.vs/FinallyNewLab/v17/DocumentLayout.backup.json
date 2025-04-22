@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Comp\\source\\repos\\FinallyNewLab\\",
+  "WorkspaceRootPath": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|C:\\Users\\Comp\\source\\repos\\FinallyNewLab\\FinallyNewLab\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|solutionrelative:FinallyNewLab\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|solutionrelative:FinallyNewLab\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|solutionrelative:FinallyNewLab\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Base.h",
+              "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\Base.h",
+              "RelativeDocumentMoniker": "FinallyNewLab\\Base.h",
+              "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\Base.h",
+              "RelativeToolTip": "FinallyNewLab\\Base.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-22T07:45:55.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Base.cpp",
+              "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\Base.cpp",
+              "RelativeDocumentMoniker": "FinallyNewLab\\Base.cpp",
+              "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\Base.cpp",
+              "RelativeToolTip": "FinallyNewLab\\Base.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-22T07:45:41.999Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Comp\\source\\repos\\FinallyNewLab\\FinallyNewLab\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\main.cpp",
               "RelativeDocumentMoniker": "FinallyNewLab\\main.cpp",
-              "ToolTip": "C:\\Users\\Comp\\source\\repos\\FinallyNewLab\\FinallyNewLab\\main.cpp*",
+              "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\main.cpp*",
               "RelativeToolTip": "FinallyNewLab\\main.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T07:39:06.123Z",
               "EditorCaption": ""
