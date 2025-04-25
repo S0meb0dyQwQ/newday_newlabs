@@ -53,6 +53,7 @@ void RandomMatrix(int32_t**& matrix, int32_t rows, int32_t cols, int32_t a, int3
 }
 void InputMatrix(int32_t**& matrix, int32_t rows, int32_t cols) 
 {
+	std::cout << "input elements of matrix\n";
 	for (int32_t i{}; i < rows; ++i)
 	{
 		for (int32_t j{}; j < cols; ++j)
@@ -79,4 +80,10 @@ void DeleteMatrix(double**& matrix, int32_t rows)
 		delete[] matrix[i];
 	}
 	delete[] matrix;
+}
+char InputChoose(char& choose)
+{
+	std::cout << "Do u want to input array by yorself ? ( y/n )\n";
+	std::cin >> choose;
+	return choose;
 }

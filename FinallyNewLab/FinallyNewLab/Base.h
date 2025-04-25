@@ -13,4 +13,5 @@ void RandomMatrix(int32_t**&, int32_t, int32_t, int32_t, int32_t);
 void InputMatrix(int32_t**&, int32_t, int32_t);
 void PrintMatrix(int32_t**&, int32_t, int32_t);
 void DeleteMatrix(double**&, int32_t);
+char InputChoose(char&);
 #endif

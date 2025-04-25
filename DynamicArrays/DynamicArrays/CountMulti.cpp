@@ -17,8 +17,6 @@ int32_t FindAbsMax(double* array, int32_t size)
 }
 double CountMulti(double* array, int32_t size) 
 {
-	try 
-	{
 		int32_t max_index{ FindAbsMax(array, size) };
 		if (max_index == size - 1)
 		{
@@ -31,10 +29,4 @@ double CountMulti(double* array, int32_t size)
 		}
 		std::cout << " multiplication of elements after max: ";
 		return multi;
-	}
-	catch (const char* message)
-	{
-		std::cout << message <<'\n';
-		return 0;
-	}
 }
