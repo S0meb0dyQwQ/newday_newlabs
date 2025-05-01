@@ -18,7 +18,7 @@ int32_t CountSummofColumnWithZero(int32_t** matrix, int32_t rows, int32_t cols)
 	int32_t index{ FindIndexofColumnWithZero(matrix,rows, cols) };
 	if (index == -1)
 	{
-		throw std::logic_error("there is no zeros in matrix");
+		throw std::logic_error("there is no zeros in matrix\n");
 	}
 	int32_t sum{};
 	for (int32_t i{}; i < rows; ++i)
@@ -29,27 +29,41 @@ int32_t CountSummofColumnWithZero(int32_t** matrix, int32_t rows, int32_t cols)
 }
 void OrderMatrix(int32_t**& matrix, int32_t rows, int32_t cols)
 {
-	bool order{false};
 	for (int32_t i{}; i < rows; ++i)
 	{
-		for (int32_t j{}; j < cols - 1; ++j)
+		if (( i + 1 )% 2 == 0)
 		{
-			for (int32_t k{}; k < cols - i - 1; ++k) //херня разбей на две T_T
+			OrderEvenRows(matrix, i, cols);
+		}
+		else
+		{
+			OrderOddRows(matrix, i, cols);
+		}
+	}
+}
+void OrderEvenRows(int32_t**& matrix, int32_t i, int32_t cols) 
+{
+	bool order{ false };
+	for (int32_t j{}; j < cols - 1; ++j)
+	{
+		for (int32_t k{}; k < cols - j - 1; ++k) 
+		{
+			if (matrix[i][k] > matrix[i][k + 1])
 			{
-				if (i % 2 == 0)
-				{
-					if (matrix[i][j] > matrix[i][j + 1]) 
-					{
-						std::swap(matrix[i][j], matrix[i][j + 1]);
-					}
-				}
-				else
-				{
-					if (matrix[i][j] < matrix[i][j + 1])
-					{
-						std::swap(matrix[i][j], matrix[i][j + 1]);
-					}
-				}
+				std::swap(matrix[i][k], matrix[i][k + 1]);
+			}
+		}
+	}
+}
+void OrderOddRows(int32_t**& matrix, int32_t i, int32_t cols)
+{
+	for (int32_t j{}; j < cols - 1; ++j)
+	{
+		for (int32_t k{}; k < cols - j - 1; ++k)
+		{
+			if (matrix[i][k] < matrix[i][k + 1])
+			{
+				std::swap(matrix[i][k], matrix[i][k + 1]);
 			}
 		}
 	}

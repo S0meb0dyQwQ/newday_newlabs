@@ -73,7 +73,7 @@ void PrintMatrix(int32_t**& matrix, int32_t rows, int32_t cols)
 		std::cout << '\n';
 	}
 }
-void DeleteMatrix(double**& matrix, int32_t rows)
+void DeleteMatrix(int32_t**& matrix, int32_t rows)
 {
 	for (int32_t i{}; i < rows; ++i)
 	{
