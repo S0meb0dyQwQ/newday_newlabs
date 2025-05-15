@@ -6,7 +6,7 @@
 
 void InputRows(int32_t&);
 void InputCols(int32_t&);
-int32_t** CreateMatrix(int32_t, int32_t);
+void CreateMatrix(int32_t**& ,int32_t, int32_t);
 void InputBorders(int32_t&);
 void SwapBorders(int32_t&, int32_t&);
 void RandomMatrix(int32_t**&, int32_t, int32_t, int32_t, int32_t);

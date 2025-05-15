@@ -4,6 +4,10 @@ void InputNumber(double& number)
 {
 	std::cout << "input number\n";
 	std::cin >> number;
+	if (std::cin.fail())
+	{
+		throw std::invalid_argument("wrong number, i need number");
+	}
 }
 void ChangeArray(double* array, int32_t size, double number)
 {

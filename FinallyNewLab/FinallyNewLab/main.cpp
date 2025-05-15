@@ -13,7 +13,8 @@ int main()
 	{
 		InputRows(rows);
 		InputCols(cols);
-		int32_t** matrix{ CreateMatrix(rows,cols) };
+		int32_t** matrix{nullptr};
+		CreateMatrix(matrix, rows, cols);
 		choose = InputChoose(choose);
 		switch (choose)
 		{
@@ -27,7 +28,7 @@ int main()
 			InputBorders(high_border);
 			if (low_border == high_border)
 			{
-				throw std::logic_error("i cant random same numbers\n");
+				throw std::logic_error("i can't random same numbers\n");
 			}
 			if (low_border > high_border)
 			{
@@ -68,7 +69,8 @@ int main()
 	try
 	{
 		InputRows(rows);
-		int32_t** square{ CreateMatrix(rows,rows) };
+		int32_t** square{ nullptr};
+		CreateMatrix(square , rows, rows);
 		choose = InputChoose(choose);
 		switch (choose)
 		{

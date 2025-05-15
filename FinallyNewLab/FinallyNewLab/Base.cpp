@@ -17,15 +17,14 @@ void InputCols(int32_t& a)
 		throw std::invalid_argument("bad number");
 	}
 }
-int32_t** CreateMatrix(int32_t rows, int32_t cols)
+void CreateMatrix(int32_t**& matrix,int32_t rows, int32_t cols)
 {
-	int32_t** matrix = new int32_t* [rows];
+	matrix = new int32_t* [rows];
 
 	for (int32_t i{}; i < rows; ++i)
 	{
 		matrix[i] = new int32_t[cols];
 	}
-	return matrix;
 }
 void InputBorders(int32_t& a) 
 {

@@ -25,16 +25,16 @@ double SummBetweenNegative(double* array, int32_t size)
 		int32_t first_negative{ FindFirstNegativeFromBegin(array, size)};
 		if (first_negative == -1) 
 		{
-			throw "can't count summ because all elements are positive";
+			throw std::domain_error("can't count summ because all elements are positive");
 		}
 		int32_t last_negative{ FindSecondNegativeFromTheEhd(array, size) };
 		if (last_negative == first_negative)
 		{
-			throw "can't count summ, there is only one negative";
+			throw std::domain_error("can't count summ, there is only one negative");
 		}
 	    if (last_negative - first_negative == 1)
 		{
-			throw "can't count summ, there is no elements between negative";
+			throw std::domain_error("can't count summ, there is no elements between negative");
 		}
 		double sum{};
 		for (int32_t i{ first_negative }; i < last_negative; ++i)

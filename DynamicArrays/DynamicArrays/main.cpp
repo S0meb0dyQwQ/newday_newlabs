@@ -26,7 +26,6 @@ int main()
 			break;
 		default:
 			throw std::invalid_argument("wrong answer");
-			break;
 		}
 
 		std::cout << "here is position of min element: " << MinElementIndex(array, size) << '\n';
@@ -34,22 +33,28 @@ int main()
 		{
 			std::cout << "sum between negative: " << SummBetweenNegative(array, size) << '\n';
 		}
-		catch (const char* message)
+		catch (std::domain_error& message)
 		{
-			std::cout << message << '\n';
+			std::cout << message.what() << '\n';
 		}
-		InputNumber(number);
-		ChangeArray(array, size, number);
-
+		
+		try 
+		{
+			InputNumber(number);
+			ChangeArray(array, size, number);
+		}
+		catch (std::invalid_argument& error)
+		{
+			std::cout << error.what();
+		}
 		SortBySign(array, size);
 		try 
 		{
 			std::cout << CountMulti(array, size) << '\n';
 		}
-		catch (const char* message)
+		catch (std::domain_error& message)
 		{
-			std::cout << message << '\n';
-			return 0;
+			std::cout << message.what() << '\n';
 		}
 		std::cout <<"ammount of different elements: " << CountDifferentNumbers(array, size) << '\n';
 

@@ -20,7 +20,7 @@ double CountMulti(double* array, int32_t size)
 		int32_t max_index{ FindAbsMax(array, size) };
 		if (max_index == size - 1)
 		{
-			throw "can't count multi";
+			throw std::domain_error("can't count multi, max is the last element");
 		}
 		double multi{ 1.0 };
 		for (int32_t i{ max_index + 1 }; i < size; ++i)
