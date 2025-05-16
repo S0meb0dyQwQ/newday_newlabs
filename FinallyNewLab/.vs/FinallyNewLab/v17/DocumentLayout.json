@@ -23,12 +23,12 @@
       "RelativeMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|solutionrelative:FinallyNewLab\\FirstPart.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\SecondPart.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|solutionrelative:FinallyNewLab\\SecondPart.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\FirstPart.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|solutionrelative:FinallyNewLab\\FirstPart.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\SecondPart.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5E30F6ED-3E0B-48B1-AEDA-457B14829EE0}|FinallyNewLab\\FinallyNewLab.vcxproj|solutionrelative:FinallyNewLab\\SecondPart.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,13 +48,14 @@
               "RelativeDocumentMoniker": "FinallyNewLab\\SecondPart.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\SecondPart.cpp",
               "RelativeToolTip": "FinallyNewLab\\SecondPart.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-30T13:51:46.455Z"
+              "WhenOpened": "2025-04-30T13:51:46.455Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SecondPart.h",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\SecondPart.h",
               "RelativeDocumentMoniker": "FinallyNewLab\\SecondPart.h",
@@ -72,13 +73,14 @@
               "RelativeDocumentMoniker": "FinallyNewLab\\FirstPart.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\FirstPart.cpp",
               "RelativeToolTip": "FinallyNewLab\\FirstPart.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-25T16:31:44.12Z"
+              "WhenOpened": "2025-04-25T16:31:44.12Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "FirstPart.h",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\FirstPart.h",
               "RelativeDocumentMoniker": "FinallyNewLab\\FirstPart.h",
@@ -86,7 +88,8 @@
               "RelativeToolTip": "FinallyNewLab\\FirstPart.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-25T15:47:49.545Z"
+              "WhenOpened": "2025-04-25T15:47:49.545Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,7 +99,7 @@
               "RelativeDocumentMoniker": "FinallyNewLab\\Base.h",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\Base.h",
               "RelativeToolTip": "FinallyNewLab\\Base.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-22T07:45:55.157Z",
               "EditorCaption": ""
@@ -122,7 +125,7 @@
               "RelativeDocumentMoniker": "FinallyNewLab\\main.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\FinallyNewLab\\FinallyNewLab\\main.cpp",
               "RelativeToolTip": "FinallyNewLab\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T07:39:06.123Z",
               "EditorCaption": ""
