@@ -1,4 +1,4 @@
-////if u dont know u solve 13) =)
+//if u dont know u solve 13) =)
 #include <iostream>
 #include <cstring>
 #include <string>
