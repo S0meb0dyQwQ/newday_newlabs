@@ -6,5 +6,5 @@
 #include "SolutionTo13.h"
 void InputWords(char*);
 char* ChangeWords(char*);
-char* MakeDelims(char*);
+char* MakeDelims(char*, char*);
 #endif

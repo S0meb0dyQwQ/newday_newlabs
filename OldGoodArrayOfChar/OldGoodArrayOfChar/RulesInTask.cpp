@@ -4,10 +4,6 @@ char* WorkOfRules(char* word)
 	size_t length{ strlen(word) };
 	if (length < 7 || IsDigit(word))
 	{
-		/*for (int32_t i{}; i <= length/2; ++i)
-		{
-			std::swap(word[i],word[length - i]);
-		}*/
 		_strrev(word);
 	}
 	if (IsLetter(word))

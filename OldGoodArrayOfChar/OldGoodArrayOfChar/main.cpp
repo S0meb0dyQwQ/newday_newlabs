@@ -7,7 +7,15 @@
 int main()
 {
 	char str[300];
-	InputWords(str);
-	std::cout<<ChangeWords(str);
+	try
+	{
+		std::cout << "in this world there is some rules for texting. You'll see.\n";
+		InputWords(str);
+		std::cout << "well, i change your message by rules:\n" << ChangeWords(str);
+	}
+	catch (std::logic_error& e)
+	{
+		std::cout << e.what();
+	}
 	return 0;
 }

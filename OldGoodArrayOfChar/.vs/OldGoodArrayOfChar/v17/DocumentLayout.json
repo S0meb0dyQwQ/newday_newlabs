@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "OldGoodArrayOfChar\\Base.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\Base.cpp",
               "RelativeToolTip": "OldGoodArrayOfChar\\Base.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAjwA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-13T11:52:50.642Z",
               "EditorCaption": ""
@@ -55,7 +55,8 @@
               "RelativeToolTip": "OldGoodArrayOfChar\\SolutionTo13.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-13T09:51:36.268Z"
+              "WhenOpened": "2025-05-13T09:51:36.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -65,9 +66,10 @@
               "RelativeDocumentMoniker": "OldGoodArrayOfChar\\RulesInTask.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\RulesInTask.cpp",
               "RelativeToolTip": "OldGoodArrayOfChar\\RulesInTask.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-13T10:02:39.707Z"
+              "WhenOpened": "2025-05-13T10:02:39.707Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -77,9 +79,10 @@
               "RelativeDocumentMoniker": "OldGoodArrayOfChar\\Base.h",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\Base.h",
               "RelativeToolTip": "OldGoodArrayOfChar\\Base.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-13T09:39:59.548Z"
+              "WhenOpened": "2025-05-13T09:39:59.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -89,9 +92,10 @@
               "RelativeDocumentMoniker": "OldGoodArrayOfChar\\main.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\main.cpp",
               "RelativeToolTip": "OldGoodArrayOfChar\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-13T09:16:04.791Z"
+              "WhenOpened": "2025-05-13T09:16:04.791Z",
+              "EditorCaption": ""
             }
           ]
         }
