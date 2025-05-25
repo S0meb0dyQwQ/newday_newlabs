@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Comp\\source\\repos\\HeyStrings\\",
+  "WorkspaceRootPath": "C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{052007DC-982C-41EF-8134-DB6E193DD4B5}|HeyStrings\\HeyStrings.vcxproj|C:\\Users\\Comp\\source\\repos\\HeyStrings\\HeyStrings\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{052007DC-982C-41EF-8134-DB6E193DD4B5}|HeyStrings\\HeyStrings.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{052007DC-982C-41EF-8134-DB6E193DD4B5}|HeyStrings\\HeyStrings.vcxproj|solutionrelative:HeyStrings\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{052007DC-982C-41EF-8134-DB6E193DD4B5}|HeyStrings\\HeyStrings.vcxproj|C:\\Users\\Comp\\source\\repos\\HeyStrings\\HeyStrings\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{052007DC-982C-41EF-8134-DB6E193DD4B5}|HeyStrings\\HeyStrings.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{052007DC-982C-41EF-8134-DB6E193DD4B5}|HeyStrings\\HeyStrings.vcxproj|solutionrelative:HeyStrings\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{052007DC-982C-41EF-8134-DB6E193DD4B5}|HeyStrings\\HeyStrings.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{052007DC-982C-41EF-8134-DB6E193DD4B5}|HeyStrings\\HeyStrings.vcxproj|solutionrelative:HeyStrings\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -18,17 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Base.cpp",
+              "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\Base.cpp",
+              "RelativeDocumentMoniker": "HeyStrings\\Base.cpp",
+              "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\Base.cpp*",
+              "RelativeToolTip": "HeyStrings\\Base.cpp*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-25T12:03:29.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Base.h",
-              "DocumentMoniker": "C:\\Users\\Comp\\source\\repos\\HeyStrings\\HeyStrings\\Base.h",
+              "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\Base.h",
               "RelativeDocumentMoniker": "HeyStrings\\Base.h",
-              "ToolTip": "C:\\Users\\Comp\\source\\repos\\HeyStrings\\HeyStrings\\Base.h",
-              "RelativeToolTip": "HeyStrings\\Base.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\Base.h*",
+              "RelativeToolTip": "HeyStrings\\Base.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-16T10:18:51.707Z",
               "EditorCaption": ""
@@ -37,11 +54,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Comp\\source\\repos\\HeyStrings\\HeyStrings\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\main.cpp",
               "RelativeDocumentMoniker": "HeyStrings\\main.cpp",
-              "ToolTip": "C:\\Users\\Comp\\source\\repos\\HeyStrings\\HeyStrings\\main.cpp",
-              "RelativeToolTip": "HeyStrings\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\HeyStrings\\HeyStrings\\main.cpp*",
+              "RelativeToolTip": "HeyStrings\\main.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-06T07:40:27.776Z",
               "EditorCaption": ""

@@ -1,3 +1,4 @@
+/* this is 7 lab. task 1 */
 #include <iostream>
 #include "Base.h"
 int main()
@@ -5,17 +6,14 @@ int main()
 	try
 	{
 		std::string str;
-		std::cout << "input text\n";
-		getline(std::cin, str);
-		if (str.empty())
-		{
-			throw std::logic_error("please input something");
-		}
-		std::cout << "input delims\n";
+		std::string delims;
+		InputWords(str);
+		InputDelims(delims);
+		std::cout << ChangeWords(str, delims);
 	}
-	catch (std::logic_error) 
+	catch (std::logic_error& e) 
 	{
-
+		std::cout << e.what();
 	}
 	return 0;
 }
