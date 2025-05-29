@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1891297B-1900-43D8-90B5-F518519EA6DD}|OldGoodArrayOfChar\\OldGoodArrayOfChar.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1891297B-1900-43D8-90B5-F518519EA6DD}|OldGoodArrayOfChar\\OldGoodArrayOfChar.vcxproj|solutionrelative:OldGoodArrayOfChar\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1891297B-1900-43D8-90B5-F518519EA6DD}|OldGoodArrayOfChar\\OldGoodArrayOfChar.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1891297B-1900-43D8-90B5-F518519EA6DD}|OldGoodArrayOfChar\\OldGoodArrayOfChar.vcxproj|solutionrelative:OldGoodArrayOfChar\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1891297B-1900-43D8-90B5-F518519EA6DD}|OldGoodArrayOfChar\\OldGoodArrayOfChar.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1891297B-1900-43D8-90B5-F518519EA6DD}|OldGoodArrayOfChar\\OldGoodArrayOfChar.vcxproj|solutionrelative:OldGoodArrayOfChar\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1891297B-1900-43D8-90B5-F518519EA6DD}|OldGoodArrayOfChar\\OldGoodArrayOfChar.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Base.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\Base.cpp",
               "RelativeDocumentMoniker": "OldGoodArrayOfChar\\Base.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\Base.cpp",
               "RelativeToolTip": "OldGoodArrayOfChar\\Base.cpp",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAjwA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-13T11:52:50.642Z",
               "EditorCaption": ""
@@ -83,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\OldGoodArrayOfChar\\OldGoodArrayOfChar\\main.cpp",
               "RelativeDocumentMoniker": "OldGoodArrayOfChar\\main.cpp",

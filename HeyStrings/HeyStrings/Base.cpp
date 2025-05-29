@@ -28,22 +28,25 @@ std::string ChangeWords(std::string str, std::string delims)
 	std::string result;
 	for (size_t i{}; i <= str.length(); ++i)
 	{
-		result.push_back(str[i]);
 		if (i == begin_first)
 		{
-			for (size_t j{ begin_last }; j <= end_last; ++j)
+			for (size_t j{ begin_last }; j < end_last; ++j)
 			{
 				result.push_back(str[j]);
 			}
-			i = end_first;
+			i = end_first - 1;
 		}
-		if (i == begin_last)
+		else if (i == begin_last)
 		{
-			for (size_t j{ begin_first }; j <= end_first; ++j)
+			for (size_t j{ begin_first }; j < end_first; ++j)
 			{
 				result.push_back(str[j]);
 			}
-			i = end_last;
+			i = end_last - 1;
+		}
+		else
+		{
+			result.push_back(str[i]);
 		}
 	}
 	return result;

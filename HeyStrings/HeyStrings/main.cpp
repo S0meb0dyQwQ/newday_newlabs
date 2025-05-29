@@ -9,7 +9,7 @@ int main()
 		std::string delims;
 		InputWords(str);
 		InputDelims(delims);
-		std::cout << ChangeWords(str, delims);
+		std::cout << "check my work, captain:\n" << ChangeWords(str, delims);
 	}
 	catch (std::logic_error& e) 
 	{
