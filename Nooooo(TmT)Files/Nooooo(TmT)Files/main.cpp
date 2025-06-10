@@ -144,10 +144,14 @@ int main()
 			break;
 		}
 		default:
-			std::cout << "you have only 1,2 and 3 options";
+			throw std::invalid_argument("you have only 1,2 and 3 options");
 		}
 	}
 	catch (std::ios_base::failure& e) 
+	{
+		std::cout << e.what();
+	}
+	catch (std::invalid_argument& e)
 	{
 		std::cout << e.what();
 	}

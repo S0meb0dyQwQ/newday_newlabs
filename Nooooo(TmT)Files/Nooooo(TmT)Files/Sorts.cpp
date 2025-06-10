@@ -33,6 +33,7 @@ void InputSortType(bool& a)
 	std::cout << "by the way, do you want to sort ascending(1) or descending(0)?\n";
 	std::cin >> a;
 }
+
 void BubbleSort(double*& a, int32_t n, bool sort) 
 {
 	bool swap{ false };
@@ -87,7 +88,7 @@ int32_t FindSmallestPositionFromBeginning(double* a, int32_t i, int32_t n)
 int32_t FindSmallestPositionFromEnd(double* a, int32_t i, int32_t n)
 {
 	int32_t position{ i };
-	for (int32_t k{ 0 }; k <= i; ++k)
+	for (int32_t k{}; k <= i; ++k)
 	{
 		if (a[k] < a[position])
 			position = k;
@@ -116,75 +117,70 @@ void SelectionSort(double*& a, int32_t n, bool sort)
 
 void InsertionSort(double*& a, int32_t n, bool sort)
 {
-	if (sort)
-	{
-		for (int32_t i = 1; i < n; i++)
+		for (int32_t i{ 1 }; i < n; i++)
 		{
-			int32_t j = i - 1;
-			while (j >= 0 && a[j] > a[j + 1])
+			int32_t j{ i - 1 };
+			if (sort)
 			{
-				std::swap(a[j], a[j + 1]);
-				j--;
+				while (j >= 0 && a[j] > a[j + 1])
+				{
+					std::swap(a[j], a[j + 1]);
+					--j;
+				}
+			}
+			else 
+			{
+				while (j >= 0 && a[j] < a[j + 1])
+				{
+					std::swap(a[j], a[j + 1]);
+					--j;
+				}
 			}
 		}
-	}
-	else
-	{
-		for (int32_t i = 1; i < n; i++)
-		{
-			int32_t j = i - 1;
-			while (j >= 0 && a[j] < a[j + 1])
-			{
-				std::swap(a[j], a[j + 1]);
-				j--;
-			}
-		}
-	}
 }
 
 int32_t Separate(double* a, int32_t start, int32_t sup_elem, bool sort)
 {
+	int32_t i{ start };
 	if (sort)
 	{
-		int32_t i = start;
 		while (i < sup_elem)
 		{
 			if (a[i] > a[sup_elem] && i == sup_elem - 1)
 			{
 				std::swap(a[i], a[sup_elem]);
-				sup_elem--;
+				--sup_elem;
 			}
 			else if (a[i] > a[sup_elem])
 			{
 				std::swap(a[sup_elem - 1], a[sup_elem]);
 				std::swap(a[i], a[sup_elem]);
-				sup_elem--;
+				--sup_elem;
 			}
 			else
 			{
-				i++;
+				++i;
 			}
 		}
 	}
 	else 
 	{
-		int32_t i = start;
 		while (i < sup_elem)
 		{
 			if (a[i] < a[sup_elem] && i == sup_elem - 1)
 			{
 				std::swap(a[i], a[sup_elem]);
-				sup_elem--;
+				--sup_elem;
 			}
 			else if (a[i] < a[sup_elem])
 			{
 				std::swap(a[sup_elem - 1], a[sup_elem]);
 				std::swap(a[i], a[sup_elem]);
-				sup_elem--;
+				--sup_elem;
 			}
 			else
 			{
-				i++;
+				++i;
 			}
 		}
 	}
@@ -224,33 +220,25 @@ void Merge(double*& a, int32_t start, int32_t end, int32_t mid, bool sort)
 		{
 			if (a[i] < a[j]) 
 			{
-				merge_array[k] = a[i];
-				k++;
-				i++;
+				merge_array[k++] = a[i++];
 			}
 			else
 			{
-				merge_array[k] = a[j];
-				k++;
-				j++;
+				merge_array[k++] = a[j++];
 			}
 		}
 
 		while (i <= mid) 
 		{
-			merge_array[k] = a[i];
-			k++;
-			i++;
+			merge_array[k++] = a[i++];
 		}
 
 		while (j <= end)
 		{
-			merge_array[k] = a[j];
-			k++;
-			j++;
+			merge_array[k++] = a[j++];
 		}
 
-		for (i = start; i < k; i++)
+		for (i = start; i < k; ++i)
 		{
 			a[i] = merge_array[i];
 		}
@@ -261,33 +249,25 @@ void Merge(double*& a, int32_t start, int32_t end, int32_t mid, bool sort)
 		{
 			if (a[i] > a[j])
 			{
-				merge_array[k] = a[i];
-				k++;
-				i++;
+				merge_array[k++] = a[i++];
 			}
 			else
 			{
-				merge_array[k] = a[j];
-				k++;
-				j++;
+				merge_array[k++] = a[j++];
 			}
 		}
 
 		while (i <= mid)
 		{
-			merge_array[k] = a[i];
-			k++;
-			i++;
+			merge_array[k++] = a[i++];
 		}
 
 		while (j <= end)
 		{
-			merge_array[k] = a[j];
-			k++;
-			j++;
+			merge_array[k++] = a[j++];
 		}
 
-		for (i = start; i < k; i++)
+		for (i = start; i < k; ++i)
 		{
 			a[i] = merge_array[i];
 		}
