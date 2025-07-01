@@ -1,10 +1,10 @@
 #ifndef BASE_H
 #define BASE_H
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <fstream>
 #include <cstring>
 #include <string>
-#include <sstream>
 #include <cstdlib>
 struct Student
 {
@@ -14,10 +14,12 @@ struct Student
 };
 void CheckInputFile(std::ifstream& fin);
 int32_t CountPeople(std::ifstream& );
-int32_t FindStudent(Student* a, int32_t size, char* name);
-void InputPeople(std::ifstream& fin, Student*& a, int32_t size);
-void CoutGrade(Student*& a, int32_t size);
-int Compare(const void* a, const void* b);
-//что значит отсортировать по группам? по возрастанию, по убыванию? или отдельные массивы студентов с разными группами?
-//иначе € не понимаю как делать отчет в каждой группе. какой смысл если каждый студент в разных группах
+int32_t FindStudent(Student* a, int32_t size, std::string name);
+void InputPeople(std::ifstream& fin, Student* a, int32_t size);
+void CoutGrade(Student* a, int32_t size);
+void SortStudentsByName(Student* a, int32_t size);
+void SortStudentsByGroup(Student* a, int32_t size);
+void MakeGroups(Student* a, int32_t size);
+void WriteinStudents(std::ofstream& fout, Student* a, int32_t size);
+void CoutStudents(Student* a, int32_t size);
 #endif

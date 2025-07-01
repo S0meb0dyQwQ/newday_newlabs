@@ -23,35 +23,87 @@ int32_t CountPeople(std::ifstream& fin)
 	{
 		++counter;
 	}
-	fin.close();
 	return counter;
 }
-void InputPeople(std::ifstream& fin, Student*& a, int32_t size) 
+void InputPeople(std::ifstream& fin, Student* a, int32_t size)
 {
-	std::stringstream line;
-	for (int32_t i{}; i < size; ++i)
+	fin.clear();
+	fin.seekg(0, std::ios::beg);
+	CheckInputFile(fin);
+	for (int32_t i{}; i < size; ++i) 
 	{
-		getline(fin, line, ';');
-		line >> a[i].name;
-		getline(fin, line, ';');
-		line >> a[i].group;
-		getline(fin, line, ';');
-		line >> a[i].grade;
+		fin.getline(a[i].name, 30, ';');
+		fin.ignore();
+		fin >> a[i].group;
+		fin.ignore();
+		fin >> a[i].grade;
+		fin.ignore();
 	}
+	fin.close();
 }
-int32_t FindStudent(Student* a, int32_t size, char* name)
+int32_t FindStudent(Student* a, int32_t size, std::string name)
 {
 	for (int32_t i{}; i < size; ++i)
 	{
-		if (strcmp(a[i].name, name) == 0) 
+		std::string tmp(a[i].name);
+		if (tmp.substr(0, tmp.size() - 3) == name)
 		{
 			return i;
 		}
 	}
-	std::cout << "there is no such student";
-	return -1;
+	throw std::out_of_range("there is no such students\n");
 }
-void CoutGrade(Student*& a, int32_t size) 
+void SortStudentsByName(Student* a, int32_t size)
+{
+	int32_t k{};
+	for (int32_t i{}; i < size; ++i)
+	{
+		for (int32_t j{}; j < size - i - 1; ++j)
+		{
+			if (a[j].name[k] > a[j + 1].name[k])
+			{
+				std::swap(a[j], a[j + 1]);
+				
+			}
+			if (a[j].name[k] == a[j + 1].name[k])
+			{
+				++k;
+				--j;
+			}
+		}
+	}
+}
+
+void SortStudentsByGroup(Student* a, int32_t size)
+{
+	for (int32_t i{}; i < size; ++i)
+	{
+		for (int32_t j{}; j < size - i - 1; ++j) 
+		{
+			if (a[j].group > a[j + 1].group)
+			{
+				std::swap(a[j], a[j + 1]);
+			}
+		}
+	}
+}
+void CoutStudents(Student* a, int32_t size)
+{
+	std::cout << "here is sorted students\n";
+	for (int32_t i{}; i < size; ++i)
+	{
+		std::cout << a[i].name << ";" << a[i].group << ";" << a[i].grade << '\n';
+	}
+}
+void WriteinStudents(std::ofstream& fout, Student* a, int32_t size)
+{
+	fout << "here is sorted students\n";
+	for (int32_t i{}; i < size; ++i)
+	{
+		fout << a[i].name << ";" << a[i].group << ";" << a[i].grade << '\n';
+	}
+}
+void CoutGrade(Student* a, int32_t size) 
 {
 	for (int32_t i{}; i < size; ++i)
 	{

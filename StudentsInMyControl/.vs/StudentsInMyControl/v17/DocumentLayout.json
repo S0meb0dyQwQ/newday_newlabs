@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B62B110-7519-46E7-B575-B981CC39728B}|StudentsInMyControl\\StudentsInMyControl.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B62B110-7519-46E7-B575-B981CC39728B}|StudentsInMyControl\\StudentsInMyControl.vcxproj|solutionrelative:StudentsInMyControl\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B62B110-7519-46E7-B575-B981CC39728B}|StudentsInMyControl\\StudentsInMyControl.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6B62B110-7519-46E7-B575-B981CC39728B}|StudentsInMyControl\\StudentsInMyControl.vcxproj|solutionrelative:StudentsInMyControl\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B62B110-7519-46E7-B575-B981CC39728B}|StudentsInMyControl\\StudentsInMyControl.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6B62B110-7519-46E7-B575-B981CC39728B}|StudentsInMyControl\\StudentsInMyControl.vcxproj|solutionrelative:StudentsInMyControl\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B62B110-7519-46E7-B575-B981CC39728B}|StudentsInMyControl\\StudentsInMyControl.vcxproj|C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B62B110-7519-46E7-B575-B981CC39728B}|StudentsInMyControl\\StudentsInMyControl.vcxproj|solutionrelative:StudentsInMyControl\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,23 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Base.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\Base.cpp",
               "RelativeDocumentMoniker": "StudentsInMyControl\\Base.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\Base.cpp",
               "RelativeToolTip": "StudentsInMyControl\\Base.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAFcAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-31T18:09:11.832Z"
+              "WhenOpened": "2025-05-31T18:09:11.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Base.h",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\Base.h",
               "RelativeDocumentMoniker": "StudentsInMyControl\\Base.h",
@@ -46,17 +47,18 @@
               "RelativeToolTip": "StudentsInMyControl\\Base.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-31T17:58:31.605Z"
+              "WhenOpened": "2025-05-31T17:58:31.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\main.cpp",
               "RelativeDocumentMoniker": "StudentsInMyControl\\main.cpp",
               "ToolTip": "C:\\Users\\Comp\\Git\\newday_newlabs\\StudentsInMyControl\\StudentsInMyControl\\main.cpp",
               "RelativeToolTip": "StudentsInMyControl\\main.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-31T17:58:12.115Z",
               "EditorCaption": ""

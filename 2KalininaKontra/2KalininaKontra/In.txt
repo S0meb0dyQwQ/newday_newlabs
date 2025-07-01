@@ -1,4 +1,4 @@
-sd ; 10; 8.4
-cx ; 8; 3.9;
-cxfd; 23; 6.0
-g; 5; 9.0
+Smith F.; 10; 8.4
+Black D.; 8; 3.9
+Northwest P.; 23; 6.0
+Trump D.; 5; 9.0
