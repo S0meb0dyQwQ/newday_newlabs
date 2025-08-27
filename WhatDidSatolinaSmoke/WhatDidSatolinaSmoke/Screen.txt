@@ -1,4 +1,2 @@
-t	s	q	o	n	
-Sort worked: 0.0006199seconds
-t	s	q	o	n	
-Sort worked: 0.0009083seconds
+0	1	3	7	9	
+Sort worked: 0.0015924seconds

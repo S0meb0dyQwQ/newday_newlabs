@@ -1,8 +1,16 @@
 #include "Base.h"
 #include "Sorts.h"
+void CheckSize(int32_t size)
+{
+	if (size <= 0) 
+	{
+		throw std::invalid_argument("size cannot be that small");
+	}
+}
 void WorkFromConsole()
 {
 	std::ofstream fout("Screen.txt");
+	CheckOutputFile(fout);
 	int32_t size{ 300 };
 	int32_t* digits = new int[size];
 	double* snakes = new double[size];
@@ -15,13 +23,14 @@ void WorkFromConsole()
 	int32_t choose{};
 	std::cin >> choose;
 	bool sort{};
-	std::cout << "Choose type of sort 1) ascending 2) descending\n";
+	std::cout << "Choose type of sort 1) ascending 0) descending\n";
 	std::cin >> sort;
 	switch (choose)
 	{
 	case 1:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		InputArray(digits, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -136,6 +145,7 @@ void WorkFromConsole()
 	case 2:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		InputArray(snakes, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -237,6 +247,7 @@ void WorkFromConsole()
 	case 3:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		InputArray(symbols, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -350,6 +361,7 @@ void WorkFromConsole()
 	case 4:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		std::cout << "...and input elements of array\n";
 		std::cin.ignore();
 		for (int32_t i{}; i < size; ++i)
@@ -457,6 +469,7 @@ void WorkFromConsole()
 	case 5:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		InputStudents(peoples, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -555,6 +568,8 @@ void WorkFromConsole()
 			fout << "Sort worked: " << time.count() << "seconds\n";
 			break;
 		}
+		default:
+			throw std::invalid_argument("you have only 1-5 options");
 	}
 }
 void WorkByRandom()
@@ -567,17 +582,18 @@ void WorkByRandom()
 	std::string word;
 	Student* peoples = new Student[size];
 	bool answer{ true };
-	std::cout << "what do u want to play with?\n 1) int 2) double 3) char 4) string 5) Students";
+	std::cout << "what do u want to play with?\n 1) int 2) double 3) char 4) string 5) Students\n";
 	int32_t choose{};
 	std::cin >> choose;
 	bool sort{};
-	std::cout << "Choose type of sort 1) ascending 2) descending\n";
+	std::cout << "Choose type of sort 1) ascending 0) descending\n";
 	std::cin >> sort;
 	switch (choose)
 	{
 	case 1:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		RandomInt(digits, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -675,6 +691,7 @@ void WorkByRandom()
 	case 2:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		RandomDouble(snakes, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -761,6 +778,7 @@ void WorkByRandom()
 	case 3:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		RandomChar(symbols, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -857,6 +875,7 @@ void WorkByRandom()
 	case 4:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		for (int32_t i{}; i < size; ++i)
 		{
 			words[i] = RandomStr();
@@ -946,6 +965,7 @@ void WorkByRandom()
 	case 5:
 		std::cout << " input size: ";
 		std::cin >> size;
+		CheckSize(size);
 		RandomStudents(peoples, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -1030,12 +1050,13 @@ void WorkByRandom()
 		}
 		break;
 	default:
-		std::cout << "wrong number try again later";
+		throw std::invalid_argument("you have only 1-5 options");
 	}
 }
 void WorkFromFile()
 {
 	std::ifstream fin("Resources.txt");
+	CheckInputFile(fin);
 
 	int32_t size{300};
 
@@ -1054,13 +1075,17 @@ void WorkFromFile()
 	std::cin >> choose;
 
 	bool sort{};
-	std::cout << "Choose type of sort 1) ascending 2) descending\n";
+	std::cout << "Choose type of sort 1) ascending 0) descending\n";
 	std::cin >> sort;
 
 	switch (choose)
 	{
 	case 1:
 		size = CountNum(fin);
+		if (size == 0) 
+		{
+			throw std::invalid_argument("input something in file please");
+		}
 		FillArrayFromFile(fin, digits, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -1157,6 +1182,10 @@ void WorkFromFile()
 
 	case 2:
 		size = CountNum(fin);
+		if (size == 0)
+		{
+			throw std::invalid_argument("input something in file please");
+		}
 		FillArrayFromFile(fin, snakes, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -1242,6 +1271,10 @@ void WorkFromFile()
 		break;
 	case 3:
 		size = CountSymbol(fin);
+		if (size == 0)
+		{
+			throw std::invalid_argument("input something in file please");
+		}
 		InputSymbols(fin, symbols);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -1337,6 +1370,10 @@ void WorkFromFile()
 		break;
 	case 4:
 		size = CountWords(fin);
+		if (size == 0)
+		{
+			throw std::invalid_argument("input something in file please");
+		}
 		InputWords(fin, words);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -1422,6 +1459,10 @@ void WorkFromFile()
 		break;
 	case 5:
 		size = CountStudent(fin);
+		if (size < 0)
+		{
+			throw std::invalid_argument("input something in file please");
+		}
 		FillStudent(fin, peoples, size);
 		std::cout << "do u want to touch bubble?";
 		std::cin >> answer;
@@ -1506,7 +1547,7 @@ void WorkFromFile()
 		}
 		break;
 	default:
-		std::cout << "wrong number try again later\n";
+		throw std::invalid_argument("you have only 1-5 options");
 	}
 }
 void RandomInt(int32_t* digits, int32_t size) 

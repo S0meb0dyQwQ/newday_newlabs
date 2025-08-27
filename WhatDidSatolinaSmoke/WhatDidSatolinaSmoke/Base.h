@@ -53,4 +53,5 @@ std::string RandomStr();
 void RandomStudents(Student*, int32_t );
 int32_t CountStudent(std::ifstream& fin);
 void FillStudent(std::ifstream& fin, Student* a, int32_t size);
+void CheckSize(int32_t size);
 #endif
