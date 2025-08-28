@@ -475,18 +475,17 @@ void ShuffleElements(T* arr, int32_t size)
 	for (int32_t i{}; i < size; ++i)
 	{
 		j = rand() % size;
-		temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
+		std::swap(arr[i], arr[j]);
 	}
 }
 template <class T>
 void BogoSort(T* arr, int32_t size, bool sort)
 {
+	ShowArray(arr, size);
 	if (sort) 
 	{
 		srand(static_cast<unsigned>(time(0)));
-		ShowArray(arr, size);
+		
 		while (!IsSorted(arr, size))
 		{
 			ShuffleElements(arr, size);
