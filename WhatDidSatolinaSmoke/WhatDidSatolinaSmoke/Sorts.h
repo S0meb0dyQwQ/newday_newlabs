@@ -21,99 +21,54 @@ void ShowArray(T* array, int32_t size)
 	}
 	std::cout << '\n';
 }
+
 template <typename T>
-void BubbleSort(T* a, int32_t size, bool sort)
+void BubbleSort(T* a, int32_t size, bool up)
 {
 	ShowArray(a, size);
 	bool swap{ false };
-	if (sort)
+	for (int32_t i{}; i < size; ++i)
 	{
-		for (int32_t i{}; i < size; ++i)
+		swap = false;
+		for (int32_t j{}; j < size - i - 1; ++j)
 		{
-			swap = false;
-			for (int32_t j{}; j < size - i - 1; ++j)
+			if ((a[j] > a[j + 1]) ^ up)
 			{
-				if (a[j] > a[j + 1])
-				{
-					std::swap(a[j], a[j + 1]);
-					swap = true;
-				}
+				std::swap(a[j], a[j + 1]);
+				swap = true;
 			}
-			if (!swap)
-			{
-				break;
-			}
-			ShowArray(a, size);
+		}
+		if (!swap)
+		{
+			break;
 		}
 		ShowArray(a, size);
 	}
-	else
-	{
-		for (int32_t i{}; i < size; ++i)
-		{
-			for (int32_t j{}; j < size - i - 1; ++j)
-			{
-				if (a[j] < a[j + 1])
-				{
-					std::swap(a[j], a[j + 1]);
-					swap = true;
-				}
-			}
-			if (!swap)
-			{
-				break;
-			}
-			ShowArray(a, size);
-		}
-		ShowArray(a, size);
-	}
+	ShowArray(a, size);
 }
 
 template <typename T>
 void CombSort(T* a, int32_t size, bool sort)
 {
 	ShowArray(a, size);
-	int32_t step{ size *4/5};
+	int32_t step{ size * 4 / 5 };
 	bool swap{ false };
-	if (sort)
-	{
-		while (step > 1 || swap) {
-			if (step < 1)
-			{
-				step = 1;
-				swap = false;
-			}
-			for (int32_t i{}; i + step < size; ++i)
-			{
-					if (a[i] > a[i + step])
-					{
-						std::swap(a[i], a[i + step]);
-						swap = true;
-					}
-			}
-			ShowArray(a, size);
-			step = step *4/5;
+	while (step > 1 || swap) {
+		if (step < 1)
+		{
+			step = 1;
+			swap = false;
 		}
-	}
-	else
-	{
-		while (step > 1 || swap) {
-			if (step < 1)
+		for (int32_t i{}; i + step < size; ++i)
+		{
+			if ((a[i] > a[i + step]) ^ sort)
 			{
-				step = 1;
-				swap = false;
+				std::swap(a[i], a[i + step]);
+				swap = true;
 			}
-			for (int32_t i{}; i + step < size; ++i)
-			{
-				if (a[i] < a[i + step])
-				{
-					std::swap(a[i], a[i + step]);
-					swap = true;
-				}
-			}
-			ShowArray(a, size);
-			step = step * 4 / 5;
 		}
+		ShowArray(a, size);
+		step = step * 4 / 5;
 	}
 }
 template<typename T>
@@ -123,23 +78,12 @@ void InsertionSort(T* a, int32_t size, bool sort)
 	for (int32_t i{ 1 }; i < size; i++)
 	{
 		int32_t j{ i - 1 };
-		if (sort)
+		
+		while (j >= 0 && (a[j] > a[j + 1]) ^ sort)
 		{
-			while (j >= 0 && a[j] > a[j + 1])
-			{
-				std::swap(a[j], a[j + 1]);
-				--j;
-				ShowArray(a, size);
-			}
-		}
-		else
-		{
-			while (j >= 0 && a[j] < a[j + 1])
-			{
-				std::swap(a[j], a[j + 1]);
-				--j;
-				ShowArray(a, size);
-			}
+			std::swap(a[j], a[j + 1]);
+			--j;
+			ShowArray(a, size);
 		}
 	}
 }
@@ -154,6 +98,7 @@ int32_t FindSmalFromBegin(T* a, int32_t i, int32_t n)
 	}
 	return position;
 }
+
 template<typename T>
 int32_t FindSmalFromEnd(T* a, int32_t i, int32_t n)
 {
@@ -192,16 +137,15 @@ template<typename T>
 int32_t Divide(T* a, int32_t start, int32_t sup_elem, bool sort)
 {
 	int32_t i{ start };
-	if (sort)
-	{
+	
 		while (i < sup_elem)
 		{
-			if (a[i] > a[sup_elem] && i == sup_elem - 1)
+			if ((a[i] > a[sup_elem]) ^ sort && i == sup_elem - 1)
 			{
 				std::swap(a[i], a[sup_elem]);
 				--sup_elem;
 			}
-			else if (a[i] > a[sup_elem])
+			else if ((a[i] > a[sup_elem]) ^ sort)
 			{
 				std::swap(a[sup_elem - 1], a[sup_elem]);
 				std::swap(a[i], a[sup_elem]);
@@ -212,40 +156,27 @@ int32_t Divide(T* a, int32_t start, int32_t sup_elem, bool sort)
 				++i;
 			}
 		}
-	}
-	else
-	{
-		while (i < sup_elem)
-		{
-			if (a[i] < a[sup_elem] && i == sup_elem - 1)
-			{
-				std::swap(a[i], a[sup_elem]);
-				--sup_elem;
-			}
-			else if (a[i] < a[sup_elem])
-			{
-				std::swap(a[sup_elem - 1], a[sup_elem]);
-				std::swap(a[i], a[sup_elem]);
-				--sup_elem;
-			}
-			else
-			{
-				++i;
-			}
-		}
-	}
+	
 	return sup_elem;
 }
+
 template<typename T>
-void QuickSort(T* a, int32_t start, int32_t end, bool sort, int32_t size)
+void QuickSortInside(T* a, int32_t start, int32_t end, bool sort, int32_t size)
 {
 	if (start < end)
 	{
 		int32_t sup_elem = Divide(a, start, end, sort);;
 		ShowArray(a, size);
-		QuickSort(a, start, sup_elem - 1, sort, size);
-		QuickSort(a, sup_elem + 1, end, sort, size);
+		QuickSortInside(a, start, sup_elem - 1, sort, size);
+		QuickSortInside(a, sup_elem + 1, end, sort, size);
 	}
+}
+template<typename T>
+void QuickSort(T* a, int32_t size, bool sort)
+{
+	int32_t start{};
+	int32_t end{ size - 1 };
+	QuickSortInside(a, start, end, sort, size);
 }
 template<typename T>
 void Merge(T* a, int32_t start, int32_t end, int32_t mid, bool sort)
@@ -254,10 +185,9 @@ void Merge(T* a, int32_t start, int32_t end, int32_t mid, bool sort)
 	int32_t i{ start };
 	int32_t k{ start };
 	int32_t j{ mid + 1 };
-	if (sort) {
 		while (i <= mid && j <= end)
 		{
-			if (a[i] < a[j])
+			if ((a[i] < a[j])^ sort)
 			{
 				merge_array[k++] = a[i++];
 			}
@@ -281,50 +211,27 @@ void Merge(T* a, int32_t start, int32_t end, int32_t mid, bool sort)
 		{
 			a[i] = merge_array[i];
 		}
-	}
-	else
-	{
-		while (i <= mid && j <= end)
-		{
-			if (a[i] > a[j])
-			{
-				merge_array[k++] = a[i++];
-			}
-			else
-			{
-				merge_array[k++] = a[j++];
-			}
-		}
-
-		while (i <= mid)
-		{
-			merge_array[k++] = a[i++];
-		}
-
-		while (j <= end)
-		{
-			merge_array[k++] = a[j++];
-		}
-
-		for (i = start; i < k; ++i)
-		{
-			a[i] = merge_array[i];
-		}
-	}
 }
 template<typename T>
-void MergeSort(T* a, int32_t start, int32_t end, bool sort, int32_t size)
+void MergeSortInside(T* a, int32_t start, int32_t end, bool sort, int32_t size)
 {
 	int32_t mid{};
 	if (start < end)
 	{
 
 		mid = (start + end) / 2;
-		MergeSort(a, start, mid, sort, size);
-		MergeSort(a, mid + 1, end, sort, size);
+		MergeSortInside(a, start, mid, sort, size);
+		MergeSortInside(a, mid + 1, end, sort, size);
 		Merge(a, start, end, mid, sort);
 		ShowArray(a, size);
 	}
+}
+template<typename T>
+void MergeSort(T* a, int32_t size, bool sort)
+{
+	int32_t start{};
+	int32_t end{size - 1};
+	MergeSortInside(a, start, end, sort, size);
 }
 template<typename T>
 void CocktailSort(T* a, int32_t size, bool sort)
@@ -333,13 +240,12 @@ void CocktailSort(T* a, int32_t size, bool sort)
 	int32_t left{};
 	int32_t right{ size };
 	bool swap{ true };
-	if (sort) {
 		while (swap)
 		{
 			swap = false;
 			for (int32_t i{ left }; i < right - 1; ++i)
 			{
-				if (a[i] > a[i + 1])
+				if ((a[i] > a[i + 1])^ sort)
 				{
 					std::swap(a[i], a[i + 1]);
 					swap = true;
@@ -349,7 +255,7 @@ void CocktailSort(T* a, int32_t size, bool sort)
 			--right;
 			for (int32_t i{ right }; i > left; --i)
 			{
-				if (a[i] < a[i - 1])
+				if ((a[i] < a[i - 1])^sort)
 				{
 					std::swap(a[i], a[i - 1]);
 					swap = true;
@@ -358,34 +264,6 @@ void CocktailSort(T* a, int32_t size, bool sort)
 			++left;
 			ShowArray(a, size);
 		}
-	}
-	else
-	{
-		while (swap)
-		{
-			swap = false;
-			for (int32_t i{ left }; i < right - 1; ++i)
-			{
-				if (a[i] < a[i + 1])
-				{
-					std::swap(a[i], a[i + 1]);
-					swap = true;
-				}
-			}
-			ShowArray(a, size);
-			--right;
-			for (int32_t i{ right }; i > left; --i)
-			{
-				if (a[i] > a[i - 1])
-				{
-					std::swap(a[i], a[i - 1]);
-					swap = true;
-				}
-			}
-			ShowArray(a, size);
-			++left;
-		}
-	}
 }
 template <typename T>
 T FindMin(T* a, int32_t size)
@@ -414,7 +292,7 @@ T FindMax(T* a, int32_t size)
 	return max;
 }
 template <typename T>
-void CountSort(T*& a, int32_t size, bool sort)
+void CountSort(T* a, int32_t size, bool sort)
 {
 	ShowArray(a, size);
 	T min{ FindMin(a,size) };
@@ -482,9 +360,9 @@ template <class T>
 void BogoSort(T* arr, int32_t size, bool sort)
 {
 	ShowArray(arr, size);
+	srand(static_cast<unsigned>(time(0)));
 	if (sort) 
 	{
-		srand(static_cast<unsigned>(time(0)));
 		
 		while (!IsSorted(arr, size))
 		{
@@ -494,8 +372,6 @@ void BogoSort(T* arr, int32_t size, bool sort)
 	}
 	else
 	{
-		srand(static_cast<unsigned>(time(0)));
-		ShowArray(arr, size);
 		while (IsSorted(arr, size))
 		{
 			ShuffleElements(arr, size);

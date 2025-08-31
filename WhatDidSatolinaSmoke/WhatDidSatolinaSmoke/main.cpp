@@ -1,24 +1,32 @@
 #include "Base.h"
 #include "Sorts.h"
+#include "Beauty.h"
 int main() 
 {
     try {
+
+        std::cout << "what do u want to play with?\n 1) int 2) double 3) char 4) string 5) Students\n";
         int32_t choose{};
-        std::cout << "input choose:\n 1) from console 2) random 3) from file\n";
         std::cin >> choose;
         switch (choose)
         {
         case 1:
-            WorkFromConsole();
+            IntChoose();
             break;
         case 2:
-            WorkByRandom();
+            DoubleChoose();
             break;
         case 3:
-            WorkFromFile();
+            CharChoose();
+            break;
+        case 4:
+            StringChoose();
+            break;
+        case 5:
+            StudentChoose();
             break;
         default:
-            throw std::invalid_argument("you have only 1,2 and 3 options");
+            throw std::invalid_argument("you have only 1 - 5 options");
         }
     }
     catch (std::ios_base::failure& e)

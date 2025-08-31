@@ -6,6 +6,7 @@
 #include <string>
 #include <iomanip>
 #include <random>
+#include <cstdlib>
 #include "Sorts.h"
 struct Student 
 {
@@ -34,9 +35,6 @@ void FillArrayFromFile(std::ifstream& fin, T* numbers, int32_t size) {
 		fin >> numbers[i];
 	}
 }
-void WorkFromConsole();
-void WorkByRandom();
-void WorkFromFile();
 void RandomInt(int32_t*, int32_t);
 void RandomDouble(double*, int32_t);
 void RandomChar(char*, int32_t);
