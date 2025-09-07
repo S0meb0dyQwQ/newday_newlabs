@@ -333,11 +333,23 @@ void CountSort(T* a, int32_t size, bool sort)
 	}
 }
 template <class T>
-bool IsSorted(T* arr, int32_t size)
+bool IsSortedUp(T* arr, int32_t size)
 {
 	for (int32_t i{ 1 }; i < size; ++i) 
 	{
 		if (arr[i - 1] > arr[i])
+		{
+			return false;
+		}
+	}
+	return true;
+}
+template <class T>
+bool IsSortedDown(T* arr, int32_t size)
+{
+	for (int32_t i{ 1 }; i < size; ++i)
+	{
+		if (arr[i - 1] < arr[i])
 		{
 			return false;
 		}
@@ -361,10 +373,10 @@ void BogoSort(T* arr, int32_t size, bool sort)
 {
 	ShowArray(arr, size);
 	srand(static_cast<unsigned>(time(0)));
-	if (sort) 
+	if (!sort) 
 	{
 		
-		while (!IsSorted(arr, size))
+		while (!IsSortedUp(arr, size))
 		{
 			ShuffleElements(arr, size);
 			ShowArray(arr, size);
@@ -372,7 +384,7 @@ void BogoSort(T* arr, int32_t size, bool sort)
 	}
 	else
 	{
-		while (IsSorted(arr, size))
+		while (!IsSortedDown(arr, size))
 		{
 			ShuffleElements(arr, size);
 			ShowArray(arr, size);

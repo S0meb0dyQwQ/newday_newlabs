@@ -74,9 +74,7 @@ int32_t CountSymbol(std::ifstream& fin)
 void IntChoose() 
 {
 	std::ifstream fin("Resources.txt");
-	CheckInputFile(fin);
 	std::ofstream fout("Screen.txt");
-	CheckOutputFile(fout);
 
 	int32_t size{ };
 	int32_t* digits = new int[size];
@@ -89,6 +87,7 @@ void IntChoose()
 	switch (choose)
 	{
 	case 1:
+		CheckOutputFile(fout);
 		std::cout << " input size: ";
 		std::cin >> size;
 		CheckSize(size);
@@ -104,6 +103,7 @@ void IntChoose()
 		OutputSortResultInt(digits, size, sort);
 		break;
 	case 3:
+		CheckInputFile(fin);
 		size = CountNum(fin);
 		FillArrayFromFile(fin, digits, size);
 		OutputSortResultInt(digits, size, sort);
@@ -111,6 +111,8 @@ void IntChoose()
 	default:
 		throw std::invalid_argument("you have only 1,2 and 3 options");
 	}
+	fin.close();
+	fout.close();
 }
 void RandomInt(int32_t* digits, int32_t size)
 {
@@ -146,9 +148,7 @@ void RandomChar(char* digits, int32_t size)
 void DoubleChoose()
 {
 	std::ifstream fin("Resources.txt");
-	CheckInputFile(fin);
 	std::ofstream fout("Screen.txt");
-	CheckOutputFile(fout);
 
 	int32_t size{ };
 	double* snakes = new double[size];
@@ -161,6 +161,7 @@ void DoubleChoose()
 	switch (choose)
 	{
 	case 1:
+		CheckOutputFile(fout);
 		std::cout << " input size: ";
 		std::cin >> size;
 		CheckSize(size);
@@ -176,6 +177,7 @@ void DoubleChoose()
 		OutputSortResult(snakes, size, sort);
 		break;
 	case 3:
+		CheckInputFile(fin);
 		size = CountNum(fin);
 		FillArrayFromFile(fin, snakes, size);
 		OutputSortResult(snakes, size, sort);
@@ -183,13 +185,13 @@ void DoubleChoose()
 	default:
 		throw std::invalid_argument("you have only 1,2 and 3 options");
 	}
+	fin.close();
+	fout.close();
 }
 void CharChoose() 
 {
 	std::ifstream fin("Resources.txt");
-	CheckInputFile(fin);
 	std::ofstream fout("Screen.txt");
-	CheckOutputFile(fout);
 
 	int32_t size{ };
 	char* symbols = new char[size];
@@ -202,6 +204,7 @@ void CharChoose()
 	switch (choose)
 	{
 	case 1:
+		CheckOutputFile(fout);
 		std::cout << " input size: ";
 		std::cin >> size;
 		CheckSize(size);
@@ -217,6 +220,7 @@ void CharChoose()
 		OutputSortResultChar(symbols, size, sort);
 		break;
 	case 3:
+		CheckInputFile(fin);
 		size = CountSymbol(fin);
 		InputSymbols(fin, symbols);
 		OutputSortResultChar(symbols, size, sort);
@@ -224,13 +228,13 @@ void CharChoose()
 	default:
 		throw std::invalid_argument("you have only 1,2 and 3 options");
 	}
+	fin.close();
+	fout.close();
 }
 void StringChoose()
 {
 	std::ifstream fin("Resources.txt");
-	CheckInputFile(fin);
 	std::ofstream fout("Screen.txt");
-	CheckOutputFile(fout);
 
 	int32_t size{ 300};
 	std::string* words = new std::string[size];
@@ -243,6 +247,7 @@ void StringChoose()
 	switch (choose)
 	{
 	case 1:
+		CheckOutputFile(fout);
 		std::cout << " input size: ";
 		std::cin >> size;
 		CheckSize(size);
@@ -254,13 +259,11 @@ void StringChoose()
 		std::cout << " input size: ";
 		std::cin >> size;
 		CheckSize(size);
-		for (int32_t i{}; i < size; ++i)
-		{
-			words[i] = RandomStr();
-		}
+		RandomStr(words, size);
 		OutputSortResult(words, size, sort);
 		break;
 	case 3:
+		CheckInputFile(fin);
 		size = CountSymbol(fin);
 		InputWords(fin, words);
 		OutputSortResult(words, size, sort);
@@ -268,13 +271,14 @@ void StringChoose()
 	default:
 		throw std::invalid_argument("you have only 1,2 and 3 options");
 	}
+	delete[]words;
+	fin.close();
+	fout.close();
 }
 void StudentChoose()
 {
 	std::ifstream fin("Resources.txt");
-	CheckInputFile(fin);
 	std::ofstream fout("Screen.txt");
-	CheckOutputFile(fout);
 
 	int32_t size{ 300 };
 	Student* peoples = new Student[size];
@@ -287,6 +291,7 @@ void StudentChoose()
 	switch (choose)
 	{
 	case 1:
+		CheckOutputFile(fout);
 		std::cout << " input size: ";
 		std::cin >> size;
 		CheckSize(size);
@@ -302,6 +307,7 @@ void StudentChoose()
 		OutputSortResult(peoples, size, sort);
 		break;
 	case 3:
+		CheckInputFile(fin);
 		size = CountStudent(fin);
 		FillStudent(fin, peoples, size);
 		OutputSortResult(peoples, size, sort);
@@ -309,6 +315,9 @@ void StudentChoose()
 	default:
 		throw std::invalid_argument("you have only 1,2 and 3 options");
 	}
+	delete[]peoples;
+	fin.close();
+	fout.close();
 }
 void InputSymbols(std::ifstream& fin, char* symbols)
 {
@@ -341,7 +350,7 @@ void InputWords(std::ifstream& fin, std::string* symbols)
 		++i;
 	}
 }
-std::string RandomStr()
+std::string RandomOneWord()
 {
 	std::random_device rd;
 	std::mt19937 gen(rd());
@@ -352,6 +361,13 @@ std::string RandomStr()
 	RandomChar(word, size);
 	return word;
 }
+void RandomStr(std::string* words, int32_t size)
+{
+	for (int32_t i{}; i < size; ++i)
+	{
+		words[i] = RandomOneWord();
+	}
+}
 void RandomStudents(Student* a, int32_t size)
 {
 	std::random_device rd;
@@ -359,7 +375,7 @@ void RandomStudents(Student* a, int32_t size)
 	std::uniform_int_distribution<int32_t> dist(1, 5);
 	for (int32_t i{}; i < size; ++i)
 	{
-		a[i].surname = RandomStr();
+		a[i].surname = RandomOneWord();
 		a[i].course = dist(gen);
 		a[i].group = dist(gen);
 	}
