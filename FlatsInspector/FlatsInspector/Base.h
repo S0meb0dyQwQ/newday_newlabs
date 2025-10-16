@@ -24,8 +24,6 @@ public:
 	List();
 	~List();
 	List(const List&);
-	void Erase();
-	void Clone(const List& L);
 	void Insert(Flat);
 	void ListPrint()const;
 	void FindGoodElement(Flat);

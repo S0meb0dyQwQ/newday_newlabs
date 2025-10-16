@@ -9,11 +9,12 @@ int main()
 		//catalog.InputCatalog();
 		std::cout << "Hello client. Here is our flat exchange catalog\n";
 		catalog.ListPrint();
-		Flat a;
+		Flat house;
 		std::cout << "Please, fill out the exchange application\n";
-		InputFlat(a);
-		CheckFlatInfo(a);
-		catalog.FindGoodElement(a);
+		InputFlat(house);
+		CheckFlatInfo(house);
+		catalog.FindGoodElement(house);
+		std::cout << "Well done. Your application has been approved\n";
 		catalog.ListPrint();
 		return 0;
 	}
